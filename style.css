@@ -1,0 +1,133 @@
+.container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100vw;
+    padding: 15px 40px 0px 40px;
+    box-sizing: border-box;
+}
+
+a img{
+    height: 70px;
+    margin: 0 15px;
+    -webkit-filter: drop-shadow(5px 5px 5px #888888);
+    filter: drop-shadow(5px 5px 5px #888888);
+}
+.mec-text{
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    width: 120px;
+    font-size: 14px;
+    display: inline-block;
+    transform: translateY(-10px);
+}
+.excellogos{
+    float:right;
+}
+.excellogos:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s;
+}
+
+#Right-Cog-2{
+    transform-origin: 1470px 800px;
+}
+#Left-Cog-1{
+    transform-origin: 160px 440px;
+}
+#Left-Cog-2{
+    transform-origin: 326px 960px;
+}
+#Left-Cog-3-Group{
+    transform-origin: 616px 827px;
+    will-change: transform;
+}
+#Center-Gears-Group{
+    transform-origin: 1049px 597px;
+    will-change: transform;
+}
+#Waveform-Path{
+    transform-origin: 1049px 597px;
+}
+#Coming-Soon-Group{
+    opacity:0;
+}
+#Excel-Title-Group{
+    opacity:0;
+    
+}
+
+@media only screen and (max-width: 800px) {
+  #Right_Section{
+      display:none;
+      opacity:0;
+      visibility: hidden;
+  }
+  #Left{
+    display:none;
+    opacity:0;
+    visibility: hidden;
+}
+}
+@media only screen and (max-width: 750px) {
+    a img{
+        height:60px;
+    }
+    .mec-text{
+        width: 120px;
+        font-size: 13px;
+        transform: translateY(-8px);
+    }
+}
+@media only screen and (max-width: 650px) {
+    a img{
+        height:50px;
+
+    }
+    .navbar{
+        padding:15px 20px 0 20px; 
+    }
+    .mec-text{
+        width: 110px;
+        font-size: 11px;
+        transform: translateY(-6px);
+    }
+}
+@media only screen and (max-width: 550px) {
+    a img{
+        height:40px;
+        margin: 0 10px;
+    }
+    .navbar{
+        padding:10px 10px 0 10px; 
+    }
+    .mec-text{
+        width: 90px;
+        font-size: 10px;
+        transform: translateY(-6px);
+    }
+}
+@media only screen and (max-width: 350px) {
+    a img{
+        height:30px;
+        margin: 0 8px;
+    }
+    .navbar{
+        padding:10px 8px 0 8px; 
+    }
+    .mec-text{
+        width: 80px;
+        font-size: 8px;
+        transform: translateY(-1px);
+    }
+}
