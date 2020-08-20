@@ -44,6 +44,7 @@ body{
     font-size: 24px;
     box-sizing: border-box;
     font-family: Montserrat;
+    z-index: 2;
 }
 .close{
     position: absolute;
@@ -64,6 +65,21 @@ body{
 }
 .about-excel h1{
     text-align: center;
+}
+.aebutton{
+    position: absolute;
+    top:120px;
+    right: 50px;
+    color: black;
+    font-size: 24px;
+    font-family: "Montserrat";
+    z-index: 1;
+}
+.aebutton span{
+    margin-left: 3px;
+}
+.aebutton:hover{
+    cursor: pointer;
 }
 .excel-logo{
     height: 200px;
@@ -119,6 +135,10 @@ a img{
 #Center-Gears-Group:hover{
     cursor: pointer;
   }
+#Logo-Circle{
+    transform-origin: center;
+    transition: all 0.3s;
+}
 #Logo-Circle:hover{
     cursor: pointer;
 }
@@ -137,16 +157,7 @@ a img{
 }
 
 @media only screen and (max-width: 800px) {
-  #Right_Section{
-      display:none;
-      opacity:0;
-      visibility: hidden;
-  }
-  #Left{
-    display:none;
-    opacity:0;
-    visibility: hidden;
-}
+
 }
 @media only screen and (max-width: 750px) {
     a img{
@@ -201,6 +212,14 @@ a img{
     }
 }
 @media only screen and (max-width: 1100px) {
+    .aebutton{
+        top:initial;
+        bottom: 10px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 100%;
+        text-align: center;
+    }
     .about-excel p{
         padding: 0 100px;
     }
@@ -266,4 +285,16 @@ a img{
         height: 15px;
         width: 15px;
     }
+}
+@media only screen and (max-width: 480px) {
+    #Right_Section{
+        display:none;
+        opacity:0;
+        visibility: hidden;
+    }
+    #Left{
+      display:none;
+      opacity:0;
+      visibility: hidden;
+  }
 }
